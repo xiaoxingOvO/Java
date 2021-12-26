@@ -1,0 +1,52 @@
+#box{
+    /*边框宽高*/
+    width: 300px;
+    height: 300px;
+    /*内边距*/
+    padding: 10px;
+    /*边框*/
+    border: 2px solid red;
+}
+a{
+    /*宽高*/
+    width: 100px;
+    height: 100px;
+    /*去下划线*/
+    text-decoration: none;
+    /*背景*/
+    background-color: #c41245;
+    /*行高*/
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    display: block;
+}
+a:hover{
+    /*变色*/
+    background-color: #07502f;
+}
+a1{
+
+}
+.a2{
+    /*移动右移200上移100*/
+    position: relative;
+    left: 200px;
+    top: -100px;
+}
+.a3{
+
+}
+.a4{
+    /*右移100上移200*/
+    position: relative;
+    left: 100px;
+    top: -200px;
+}
+.a5{
+    /*右移200 上移200*/
+    position: relative;
+    left: 200px;
+    top: -200px;
+
+}

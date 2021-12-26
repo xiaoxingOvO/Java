@@ -1,0 +1,22 @@
+body{
+    /* margin:外边距 */
+    margin: 0;
+    /* 内边距 上 下 左 右 */
+    padding: 1px 1px 1px 1px;
+}
+
+#box{
+    width: 300px;
+    /* border边框:线的粗细,线的样式(实体/虚线),线的颜色 */
+    border: 1px solid rgb(32, 26, 26);
+    background-color: rosybrown;
+}
+
+div:nth-of-type(1) input{
+    background-color: silver;
+    padding: 2px;
+}
+
+div:nth-of-type(1){
+    padding: 10px;
+}

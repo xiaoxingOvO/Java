@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--&lt;!&ndash;window&ndash;&gt;-->
+<!--<script>-->
+
+<!--    'use strict'-->
+<!--    // 可以调整浏览器窗口大小试试:-->
+<!--    console.log(-->
+<!--        'window inner size: ' + window.innerWidth +-->
+<!--        ' x ' + window.innerHeight +-->
+<!--        'outer size:' + outerWidth +-->
+<!--        ' x ' + outerHeight);-->
+<!--</script>-->
+
+<!--&lt;!&ndash;navigator&ndash;&gt;-->
+<!--<script>-->
+<!--    'use strict'-->
+<!--    /*navigator.appName：浏览器名称；-->
+<!--      navigator.appVersion：浏览器版本；-->
+<!--      navigator.language：浏览器设置的语言；-->
+<!--      navigator.platform：操作系统类型；-->
+<!--      navigator.userAgent：浏览器设定的User-Agent字符串。-->
+<!--    */-->
+<!--    console.log('appName = ' + navigator.appName);-->
+<!--    console.log('appVersion = ' + navigator.appVersion);-->
+<!--    console.log('language = ' + navigator.language);-->
+<!--    console.log('platform = ' + navigator.platform);-->
+<!--    console.log('userAgent = ' + navigator.userAgent);-->
+<!--</script>-->
+
+<!--&lt;!&ndash;screen&ndash;&gt;-->
+<!--<script>-->
+<!--    console.log('Screen size = ' + screen.width + ' x ' + screen.height);-->
+<!--</script>-->
+
+<!--document-->
+
+<dl id="drink-menu" style="border:solid 1px #ccc;padding:6px;">
+    <dt>摩卡</dt>
+    <dd>热摩卡咖啡</dd>
+    <dt>酸奶</dt>
+    <dd>北京老酸奶</dd>
+    <dt>果汁</dt>
+    <dd>鲜榨苹果汁</dd>
+</dl>
+<script>
+    document.title = '操作BOM'
+
+    var menu = document.getElementById('drink-menu');
+    var drinks = document.getElementsByTagName('dt');
+    var i, s;
+
+    s = '提供的饮料有:';
+    for (i=0; i<drinks.length; i++) {
+        s = s + drinks[i].innerHTML + ',';
+    }
+    console.log(s);
+
+    document.write(document.cookie); // 'v=123; remember=true; prefer=zh'
+</script>
+
+</body>
+</html>

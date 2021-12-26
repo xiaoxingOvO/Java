@@ -1,0 +1,52 @@
+#nav{
+    width:200px;
+    background: #89ca78;
+}
+
+.title{
+    /*大小*/
+    font-size: 20px;
+    /*变粗*/
+    font-weight: bold;
+    /*缩进*/
+    text-indent: 2em;
+    background: #98661a;
+    background-image: url("../resources/arrow-down.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 180px 5px;
+}
+
+/*ul{*/
+/*    !*列表背景*!*/
+/*    background: #83827e;*/
+/*}*/
+
+ul li{
+    /*行高*/
+    height: 30px;
+    /*去掉无序列表前面的点,有序列表前面的数字
+    none:去掉
+    circle:空心圆
+    decimal:数字
+    square:正方形
+    */
+    list-style: none;
+    background-image: url("../resources/arrow-right.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 140px 1px;
+}
+
+a{
+    /*去掉下划线*/
+    text-decoration: none;
+    /*字体大小*/
+    font-size: 14px;
+    /*字体颜色*/
+    color: #07502f;
+}
+
+a:hover{
+    color: orange;
+}

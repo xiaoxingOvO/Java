@@ -1,0 +1,37 @@
+.div{
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid darkgreen;
+    /* height: 400px; */
+    /* overflow: hidden; */
+}
+.div ::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.div1{
+    /* 设置边框 */
+    border: 2px solid darkgreen;
+    /* 设置浮动*/
+    float: left;
+}
+.div2{
+    border: 2px solid darkgreen;
+    float: left;
+
+}
+.div3{
+    border: 2px solid darkgreen;
+    float: left;
+}
+/* clear:left   左侧不允许有浮动
+   clear:right   右侧不允许有浮动
+   clear:both   两侧不允许有浮动
+   clear:none   不允许有浮动
+*/
+.div4{
+    border: 2px solid darkgreen;
+    font-size: 12px;
+    line-height: 23px;
+}

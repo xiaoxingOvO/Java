@@ -1,0 +1,33 @@
+body{
+    padding: 30px;
+}
+
+div{
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 25px;
+}
+#father{
+    border: 2px solid seagreen;
+    /*父级元素有定位*/
+    position: relative;
+}
+
+#div1{
+    border: 2px solid seagreen;
+    background-color: skyblue;
+    /* 相对定位:相对于自己原来的位置 */
+    position: absolute;
+    right: 30px;
+}
+
+#div2{
+    border: 2px solid seagreen;
+    background-color: slateblue;
+}
+
+#div3{
+    border: 2px solid seagreen;
+    background-color: steelblue;
+}

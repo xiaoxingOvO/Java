@@ -1,0 +1,22 @@
+div{
+    /*宽*/
+    width: 1000px;
+    /*高*/
+    height: 800px;
+    /*边框*/
+    border: 1px solid red;
+    /*背景图片:默认全部平铺*/
+    background-image: url("../resources/兔兔.jpg");
+}
+.div1{
+    /*水平平铺*/
+    background-repeat: repeat-x;
+}
+.div2{
+    /*竖着平铺*/
+    background-repeat: repeat-y;
+}
+.div3{
+    /*不平铺*/
+    background-repeat: no-repeat;
+}

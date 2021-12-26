@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="div">
+
+    <p>这里是p标签</p>
+
+</div>
+
+<script>
+    var id1 = document.getElementById('div');
+
+    //方式一:innerText
+    id1.innerText = '这是通过innerText修改的'
+
+    //方式二:innerHTML
+    // id1.innerHTML = '<span style="color:red">这是通过innerHTML修改的</span>'
+
+    //修改css
+    id1.style.color = 'green';
+    id1.style.fontSize = '20px';
+
+</script>
+
+</body>
+</html>

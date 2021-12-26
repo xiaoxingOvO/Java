@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="js">JavaScript</p>
+<div id="list">
+    <p id="java">Java</p>
+    <p id="python">Python</p>
+    <p id="scheme">Scheme</p>
+</div>
+
+
+<!--删除DOM-->
+<script>
+    var p1 = document.getElementById("js");
+    var p2 = document.getElementById("java");
+    var p3 = document.getElementById("python");
+    var p4 = document.getElementById("scheme");
+
+    // //获取父节点
+    // var d = document.getElementById("list")
+    // //通过父节点删除子节点
+    // d.removeChild(p4);
+
+
+    //或者通过子节点获取父节点,然后再删除
+    var father  = p4.parentElement;
+    father.removeChild(p4);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<p id="js">JavaScript</p>
+<div id="list">
+  <p id="java">Java</p>
+  <p id="python">Python</p>
+  <p id="scheme">Scheme</p>
+</div>
+
+
+<script>
+
+    //如果这个DOM节点是空的，例如，<div></div>，那么，直接使用innerHTML = '<span>child</span>'
+    // 就可以修改DOM节点的内容，相当于“插入”了新的DOM节点。
+
+    var
+        js = document.getElementById('js'),
+        java = document.getElementById('java'),
+        list = document.getElementById('list');
+
+    //我们插入的js节点已经存在于当前的文档树，因此这个节点首先会从原先的位置删除，再插入到新的位置。
+    list.appendChild(js);
+
+
+    //通过js创建一个新的节点
+    var newP = document.createElement('p');
+    newP.id = 'newP'
+    newP.innerText = 'Hello';
+    //插入到末尾
+    //list.appendChild(newP);
+
+    //插入到指定元素前面
+    list.insertBefore(newP,java)
+
+    //创建一个标签节点
+    var scriptElement = document.createElement('script');
+    scriptElement.setAttribute('type','text/javascript')
+
+    //getElementsByTagName返回的是个集合
+    var bodyElem = document.getElementsByTagName('body');
+    bodyElem[0].style.backgroundColor = 'yellow'
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    border: 3px solid burlywood;
+    /* inline:变成行元素 */
+    display: inline;
+}
+span{
+    width: 100px;
+    height: 100px;
+    border: 3px solid burlywood;
+    /* block:变成块元素 */
+    display: block;
+}
+ul li{
+
+    /* inline-block:是块元素,但是可以行显示 */
+    display: inline-block;
+}

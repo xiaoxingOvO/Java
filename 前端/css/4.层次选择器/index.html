@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--内部样式-->
+    <style>
+        /*后代选择器(后面所有层)*/
+        body p{
+            background: #98661a;
+        }
+        /*子选择器(下一层)*/
+        body>p{
+            background: #c41245;
+        }
+
+        /*相邻兄弟选择器(同一层),只有一个,且是下面一个*/
+        .active + p{
+            background: #07502f;
+        }
+
+        /*通用兄弟选择器,当前选中元素(同一层)的向下的所有兄弟元素*/
+        .active~p{
+            background: #07502f;
+        }
+
+    </style>
+</head>
+<body>
+
+<p class="active">p1</p>
+<h1>h1</h1>
+<p>p2</p>
+<ul>
+    <li><p>p3</p>
+        <p>p3</p>
+    </li>
+    <li><p>p4</p></li>
+</ul>
+<p>p5</p>
+</body>
+</html>

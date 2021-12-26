@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--内部样式-->
+    /*不使用类选择器和id选择器*?
+    <style>
+        /*ul的第一个子元素*/
+        ul li:first-child{
+            background: #98661a;
+        }
+
+        /*ul的最后一个元素*/
+        ul li:last-child{
+            background: #07502f;
+        }
+
+        /*选择第一个p1:定位到父元素,选择选择父元素下的第(?)个子元素,并且是当前元素才有效,顺序*/
+        p:nth-child(1){
+            background: #07502f;
+        }
+        /*选择选择父元素下的p元素的第(?)个,并且是当前元素才有效,类型*/
+        p:nth-of-type(1){
+            background: #07502f;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<p class="active">p1</p>
+<h1>h1</h1>
+<p>p2</p>
+<ul>
+    <li><p>p3</p>
+        <p>p3</p>
+    </li>
+    <li><p>p4</p></li>
+</ul>
+<p>p5</p>
+</body>
+</html>

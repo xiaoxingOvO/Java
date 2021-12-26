@@ -1,0 +1,31 @@
+body{
+    padding: 100px;
+}
+
+div{
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 25px;
+}
+#div{
+    border: 2px solid seagreen;
+}
+
+#div1{
+    border: 2px solid seagreen;
+    background-color: skyblue;
+    /* 相对定位:相对于自己原来的位置 */
+    position: relative;
+    top: -20px;
+}
+
+#div2{
+    border: 2px solid seagreen;
+    background-color: slateblue;
+}
+
+#div3{
+    border: 2px solid seagreen;
+    background-color: steelblue;
+}
